@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>BSH desky – lepené lamelové dřevo | Tesař 2. ročník</title>
+<meta name="description" content="Prezentace o BSH deskách a nosnících z lepeného lamelového dřeva: historie, výroba, vlastnosti, pevnostní třídy, použití a tesařská praxe.">
+<meta name="author" content="Vojtěch Skoták">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="progress"></div>
+<header class="top">
+  <a class="brand" href="#uvod"><i class="fa-solid fa-layer-group"></i> BSH</a>
+  <button id="menuBtn" aria-label="Menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
+  <nav id="nav">
+    <a href="#co">Co je BSH</a><a href="#historie">Historie</a><a href="#vyroba">Výroba</a>
+    <a href="#vlastnosti">Vlastnosti</a><a href="#tridy">Třídy</a><a href="#pouziti">Použití</a>
+    <a href="#praxe">Tesařská praxe</a><a href="#licence">Licence</a>
+  </nav>
+  <button id="themeBtn" aria-label="Přepnout tmavý režim"><i class="fa-solid fa-moon"></i></button>
+</header>
+
+<main>
+<section class="hero" id="uvod">
+  <div class="hero-text">
+    <p class="meta"><i class="fa-solid fa-hammer"></i> Materiály – Tesař, 2. ročník</p>
+    <h1>BSH desky<br>a nosníky</h1>
+    <p class="lead">Lepené lamelové dřevo (německy <em>Brettschichtholz</em>, anglicky <em>glulam</em>): jak vzniká, co vydrží a jak s ním pracuje tesař.</p>
+    <ul class="author">
+      <li><i class="fa-solid fa-user-pen"></i> Autor: <strong data-author>Jméno Příjmení</strong></li>
+      <li><i class="fa-solid fa-school"></i> <span data-school>Střední škola, obor Tesař, 2. ročník</span></li>
+      <li><i class="fa-solid fa-calendar-days"></i> Školní rok <span id="schoolYear">2026/2027</span></li>
+    </ul>
+    <a class="btn" href="#co"><i class="fa-solid fa-arrow-down"></i> Začít prezentaci</a>
+  </div>
+  <div class="stack" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+</section>
+
+<section class="stats">
+  <div><b data-count="1906">0</b><span>rok patentu O. Hetzera</span></div>
+  <div><b data-count="45">0</b><span>mm – nejvyšší tloušťka lamely</span></div>
+  <div><b data-count="0.7" data-dec="1">0</b><span>mm/min – rychlost zuhelnatění</span></div>
+  <div><b data-count="100">0</b><span>m a více – rozpony konstrukcí</span></div>
+</section>
+
+<section id="co" class="sec">
+  <h2><i class="fa-solid fa-circle-question"></i> Co je BSH</h2>
+  <div class="grid2">
+    <p>BSH je konstrukční prvek vyrobený slepením několika vrstev (lamel) sušeného řeziva tak, aby vlákna všech lamel probíhala <strong>stejným směrem</strong>. Zkratka pochází z německého <em>Brettschichtholz</em>; v češtině se používá název <strong>lepené lamelové dřevo</strong>. Norma pro výrobu je <strong>ČSN EN 14080</strong>.</p>
+    <p>Slovem „BSH deska“ se v praxi často označuje deska nebo hranol z lepených lamel, ale správně jde o <strong>nosník</strong> (trám, vazník, sloup). Plošné masivní desky lepené po vrstvách křížem jsou jiný materiál – <strong>CLT</strong> (křížem lepené dřevo).</p>
+  </div>
+  <div class="cards">
+    <article><i class="fa-solid fa-tree"></i><h3>Surovina</h3><p>Nejčastěji smrk, dále borovice, modřín a douglaska. Lamely se třídí podle pevnosti a vad (suky, odklon vláken).</p></article>
+    <article><i class="fa-solid fa-droplet"></i><h3>Vlhkost</h3><p>Lamely se před lepením suší na vlhkost přibližně 8–15 %, takže se hotový prvek méně kroutí a praská.</p></article>
+    <article><i class="fa-solid fa-link"></i><h3>Lepidla</h3><p>Používají se lepidla odolná vlhkosti, např. melamin-močovinoformaldehydová (MUF) a polyuretanová (PUR).</p></article>
+    <article><i class="fa-solid fa-ruler-combined"></i><h3>Rozměry</h3><p>Šířky obvykle 80–240 mm, výšky i přes 2 m, délky 30 m i více. Omezuje je hlavně doprava.</p></article>
+  </div>
+</section>
+
+<section id="historie" class="sec alt">
+  <h2><i class="fa-solid fa-clock-rotate-left"></i> Historie</h2>
+  <ol class="timeline">
+    <li><b>1900–1906</b> Německý tesař Otto Karl Friedrich Hetzer vyvíjí lepené dřevěné nosníky a roku 1906 si metodu nechává patentovat (Weimar).</li>
+    <li><b>1920–1940</b> Technologie se šíří do Švýcarska a USA. Vznikají první haly s lepenými vazníky, používá se kaseinové lepidlo.</li>
+    <li><b>Po 2. světové válce</b> Nástup syntetických lepidel (např. resorcinolových) umožňuje použití i ve vlhčím prostředí a u mostů.</li>
+    <li><b>Dnes</b> Výroba je automatizovaná, řízená normou EN 14080 a prvky se značí CE. Z BSH se staví haly, mosty i vysoké budovy.</li>
+  </ol>
+</section>
+
+<section id="vyroba" class="sec">
+  <h2><i class="fa-solid fa-industry"></i> Výroba krok za krokem</h2>
+  <ol class="steps">
+    <li><i class="fa-solid fa-temperature-high"></i><h3>Sušení</h3><p>Řezivo se suší na 8–15 % vlhkosti.</p></li>
+    <li><i class="fa-solid fa-filter"></i><h3>Třídění</h3><p>Strojní nebo vizuální třídění podle pevnosti.</p></li>
+    <li><i class="fa-solid fa-scissors"></i><h3>Vyřezání vad</h3><p>Velké suky a trhliny se vyřežou.</p></li>
+    <li><i class="fa-solid fa-grip-lines-vertical"></i><h3>Zubovité spoje</h3><p>Kratší kusy se prodlouží zubovitým klínovým spojem.</p></li>
+    <li><i class="fa-solid fa-fill-drip"></i><h3>Lepení</h3><p>Nanesení lepidla a slisování lamel v lisu.</p></li>
+    <li><i class="fa-solid fa-hourglass-half"></i><h3>Vytvrzení</h3><p>Prvek zraje v lisu nebo ve stanoveném prostředí.</p></li>
+    <li><i class="fa-solid fa-ruler"></i><h3>Hoblování</h3><p>Zahlazení boků, srážení hran, případně povrchová úprava.</p></li>
+    <li><i class="fa-solid fa-stamp"></i><h3>Kontrola a značení</h3><p>Zkoušky lepených spojů a označení CE.</p></li>
+  </ol>
+
+  <div class="calc">
+    <h3><i class="fa-solid fa-calculator"></i> Kolik lamel má nosník?</h3>
+    <div class="calc-row">
+      <label>Počet lamel: <output id="nOut">10</output><input id="nIn" type="range" min="3" max="40" value="10"></label>
+      <label>Tloušťka lamely
+        <select id="tIn"><option>20</option><option>33</option><option selected>40</option><option>45</option></select> mm
+      </label>
+    </div>
+    <p>Výška nosníku: <strong id="hOut">400 mm</strong> <span id="hNote"></span></p>
+    <div id="layers" aria-label="Průřez nosníkem"></div>
+  </div>
+</section>
+
+<section id="vlastnosti" class="sec alt">
+  <h2><i class="fa-solid fa-circle-check"></i> Vlastnosti</h2>
+  <div class="cols">
+    <div>
+      <h3 class="plus"><i class="fa-solid fa-thumbs-up"></i> Výhody</h3>
+      <ul class="list">
+        <li>Vysoká pevnost vzhledem k vlastní hmotnosti (hustota okolo 400–500 kg/m³).</li>
+        <li>Rozměrová stabilita – menší kroucení a praskání než u masivních trámů.</li>
+        <li>Libovolná délka, výška i možnost zakřivených tvarů (oblouky).</li>
+        <li>Předvídatelné chování v požáru: dřevo zuhelnatí pomalu (zhruba 0,7 mm/min) a nosník si dlouho drží únosnost.</li>
+        <li>Dobrá tepelná izolace v porovnání s ocelí a betonem.</li>
+        <li>Obnovitelná surovina, která v sobě váže uhlík.</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="minus"><i class="fa-solid fa-thumbs-down"></i> Nevýhody</h3>
+      <ul class="list">
+        <li>Vyšší cena než u masivního řeziva.</li>
+        <li>Citlivost na dlouhodobé zvlhčení – nutná konstrukční ochrana dřeva.</li>
+        <li>Složitější doprava dlouhých a vysokých prvků.</li>
+        <li>Při vrtání a zásecích je nutné dodržet pravidla projektanta, nelze dřevo libovolně oslabovat.</li>
+        <li>Lepený spoj omezuje opravy na stavbě.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="tablewrap">
+    <table>
+      <caption>Srovnání masivního dřeva, KVH a BSH</caption>
+      <thead><tr><th>Vlastnost</th><th>Masivní řezivo</th><th>KVH</th><th>BSH</th></tr></thead>
+      <tbody>
+        <tr><th>Konstrukce</th><td>Celý průřez z jednoho kusu</td><td>Hranol zdélky spojený zubovitým spojem</td><td>Lepené lamely</td></tr>
+        <tr><th>Vlhkost</th><td>Často nad 20 %</td><td>Obvykle okolo 15 %</td><td>8–15 %</td></tr>
+        <tr><th>Maximální rozměry</th><td>Omezené kmenem</td><td>Průřezy do cca 240 mm</td><td>Výšky přes 2 m, délky 30 m i více</td></tr>
+        <tr><th>Tvarová stálost</th><td>Nižší</td><td>Dobrá</td><td>Velmi dobrá</td></tr>
+        <tr><th>Cena</th><td>Nízká</td><td>Střední</td><td>Vyšší</td></tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+<section id="tridy" class="sec">
+  <h2><i class="fa-solid fa-gauge-high"></i> Pevnostní třídy</h2>
+  <p>Značení <strong>GL</strong> (glued laminated) je následováno číslem pevnosti v ohybu v N/mm². Písmeno <strong>h</strong> znamená homogenní průřez (všechny lamely stejné třídy), <strong>c</strong> kombinovaný průřez (kvalitnější lamely jsou na krajích, kde je největší namáhání).</p>
+  <div class="tablewrap">
+    <table>
+      <caption>Orientační charakteristické hodnoty homogenních tříd</caption>
+      <thead><tr><th>Třída</th><th>Ohyb [N/mm²]</th><th>Tah [N/mm²]</th><th>Tlak [N/mm²]</th><th>Hustota [kg/m³]</th></tr></thead>
+      <tbody>
+        <tr><th>GL 24h</th><td>24</td><td>16,5</td><td>24</td><td>385</td></tr>
+        <tr><th>GL 28h</th><td>28</td><td>19,5</td><td>26,5</td><td>425</td></tr>
+        <tr><th>GL 32h</th><td>32</td><td>22,5</td><td>29</td><td>440</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p class="note"><i class="fa-solid fa-triangle-exclamation"></i> Hodnoty jsou orientační. Pro návrh a výpočet vždy platí norma ČSN EN 14080 a projektová dokumentace.</p>
+  <h3>Třídy provozu (vlhkost prostředí)</h3>
+  <div class="cards">
+    <article><i class="fa-solid fa-house"></i><h3>Třída 1</h3><p>Vnitřní vytápěné prostory, vlhkost obvykle do 12 %.</p></article>
+    <article><i class="fa-solid fa-warehouse"></i><h3>Třída 2</h3><p>Zastřešené, větrané prostory, vlhkost obvykle do 20 %.</p></article>
+    <article><i class="fa-solid fa-cloud-rain"></i><h3>Třída 3</h3><p>Venkovní prostředí bez zastřešení. Nutná ochrana a pečlivý detail.</p></article>
+  </div>
+</section>
+
+<section id="pouziti" class="sec alt">
+  <h2><i class="fa-solid fa-building"></i> Kde se BSH používá</h2>
+  <div class="cards">
+    <article><i class="fa-solid fa-house-chimney"></i><h3>Střechy a krovy</h3><p>Vaznice, krokve a vazníky pro velké rozpony bez sloupů.</p></article>
+    <article><i class="fa-solid fa-futbol"></i><h3>Haly</h3><p>Sportovní, výrobní a skladové haly a zemědělské stavby.</p></article>
+    <article><i class="fa-solid fa-bridge"></i><h3>Mosty a lávky</h3><p>Pro pěší, cyklisty i silniční dopravu.</p></article>
+    <article><i class="fa-solid fa-city"></i><h3>Dřevostavby</h3><p>Rámové konstrukce, sloupy a překlady rodinných i bytových domů.</p></article>
+    <article><i class="fa-solid fa-church"></i><h3>Pohledové stavby</h3><p>Kostely, restaurace, školy – tam, kde je dřevo vidět.</p></article>
+    <article><i class="fa-solid fa-tree-city"></i><h3>Zahradní stavby</h3><p>Pergoly, přístřešky, altány (s vhodnou ochranou).</p></article>
+  </div>
+</section>
+
+<section id="praxe" class="sec">
+  <h2><i class="fa-solid fa-helmet-safety"></i> Tesařská praxe</h2>
+  <div class="cols">
+    <div>
+      <h3>Doprava a skladování</h3>
+      <ul class="list">
+        <li>Skladovat pod střechou na podkladcích, které chrání prvek před zemní vlhkostí.</li>
+        <li>Nepoužívat okované řetězy bez ochrany hran, prvky zvedat pásy.</li>
+        <li>Nechat prvek v obalové fólii, ale zajistit odvětrání.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Zpracování a montáž</h3>
+      <ul class="list">
+        <li>Řezání, vrtání a zásek dělat jen podle projektu.</li>
+        <li>Spoje: ocelové styčníkové plechy, hmoždinky, svorníky, vruty do dřeva.</li>
+        <li>Kovové díly chránit proti korozi a nepřetržitě odvádět vodu.</li>
+        <li>Dbát na pracovní postup, ochranu zraku, sluchu a dýchacích cest při broušení a řezání.</li>
+      </ul>
+    </div>
+    <div>
+      <h3>Ochrana dřeva</h3>
+      <ul class="list">
+        <li>Konstrukční ochrana (přesahy, odkapy) je důležitější než chemická.</li>
+        <li>Povrchovou úpravu nanášet po vyrovnání vlhkosti dřeva.</li>
+        <li>Pohledové prvky chránit před deštěm a slunečním zářením.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="zdroje" class="sec alt">
+  <h2><i class="fa-solid fa-book"></i> Zdroje a normy</h2>
+  <ul class="list">
+    <li>ČSN EN 14080 – Dřevěné konstrukce – Lepené lamelové dřevo a lepené masivní dřevo – Požadavky.</li>
+    <li>ČSN EN 1995-1-1 (Eurokód 5) – Navrhování dřevěných konstrukcí.</li>
+    <li>ČSN EN 1995-1-2 – Navrhování dřevěných konstrukcí na účinky požáru.</li>
+    <li>ČSN EN 338 – Konstrukční dřevo – Třídy pevnosti.</li>
+    <li>Technické listy a katalogy výrobců lepeného dřeva, učebnice tesařských konstrukcí.</li>
+  </ul>
+  <p class="note"><i class="fa-solid fa-circle-info"></i> Před odevzdáním doplň u každého zdroje datum přístupu a ověř čísla norem v aktuálním znění.</p>
+</section>
+
+<section id="licence" class="sec">
+  <h2><i class="fa-solid fa-scale-balanced"></i> Autorství a licence</h2>
+  <div class="cols">
+    <div>
+      <h3><i class="fa-solid fa-copyright"></i> Autorská práva</h3>
+      <ul class="list">
+        <li>Text a zpracování prezentace: © <span id="yr">2026</span> <span data-author>Jméno Příjmení</span>. Všechna práva vyhrazena, pokud není uvedeno jinak.</li>
+        <li>Obsah této prezentace lze sdílet podle licence <a href="https://creativecommons.org/licenses/by/4.0/deed.cs" target="_blank" rel="noopener noreferrer">CC BY 4.0</a> s uvedením autora.</li>
+        <li>Zdrojový kód (HTML, CSS, JS, Node.js) je pod licencí MIT.</li>
+        <li>Prezentace neobsahuje žádné cizí fotografie ani obrázky. Průřez nosníku je vytvořen pomocí CSS.</li>
+      </ul>
+    </div>
+    <div>
+      <h3><i class="fa-brands fa-font-awesome"></i> Font Awesome Free</h3>
+      <ul class="list">
+        <li>Ikony: <a href="https://fontawesome.com/license/free" target="_blank" rel="noopener noreferrer">Font Awesome Free 6.5.2</a> od Fonticons, Inc., licence CC BY 4.0.</li>
+        <li>Fonty ikon: SIL OFL 1.1. Kód knihovny: MIT.</li>
+        <li>Ikony nebyly graficky upraveny, jsou načítány z CDN (cdnjs).</li>
+        <li>Logo Instagramu je ochranná známka společnosti Meta Platforms, Inc. Používá se jen jako odkaz na profil autora.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <p>© <span id="yr2">2026</span> <span data-author>Jméno Příjmení</span> · BSH desky – prezentace pro obor Tesař · Licencováno pod <a href="https://raw.githubusercontent.com/PathScotty/bsh/refs/heads/main/LICENSE">MIT License</a> · Ikony: <a href="https://fontawesome.com" target="_blank" rel="noopener noreferrer">Font Awesome Free</a> (CC BY 4.0)</p>
+  <a id="instaLink" class="social" href="https://www.instagram.com/path_scotty_" target="_blank" rel="noopener noreferrer" aria-label="Instagram autora"><i class="fa-brands fa-instagram"></i> <span id="instaText">Instagram</span></a>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
